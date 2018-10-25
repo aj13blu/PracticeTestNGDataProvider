@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="106400" started-at="2018-09-27T11:16:20Z" finished-at="2018-09-27T11:18:07Z">
+    <groups>
+      <group name="A">
+        <method signature="DataProviderGuru99.TestMethodA(java.lang.String, java.lang.String)[pri:0, instance:testNG.DataProviderGuru99@262b2c86]" name="TestMethodA" class="testNG.DataProviderGuru99"/>
+      </group> <!-- A -->
+      <group name="B">
+        <method signature="DataProviderGuru99.TestMethodB(java.lang.String, java.lang.String)[pri:0, instance:testNG.DataProviderGuru99@262b2c86]" name="TestMethodB" class="testNG.DataProviderGuru99"/>
+      </group> <!-- B -->
+    </groups>
+    <test name="Default test" duration-ms="106400" started-at="2018-09-27T11:16:20Z" finished-at="2018-09-27T11:18:07Z">
+      <class name="testNG.DataProviderGuru99">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testNG.DataProviderGuru99@262b2c86]" name="setup" is-config="true" duration-ms="105463" started-at="2018-09-27T11:16:20Z" finished-at="2018-09-27T11:18:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="TestMethodA(java.lang.String, java.lang.String)[pri:0, instance:testNG.DataProviderGuru99@262b2c86]" name="TestMethodA" duration-ms="0" started-at="2018-09-27T11:18:06Z" data-provider="dataProvider" finished-at="2018-09-27T11:18:06Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method public void testNG.DataProviderGuru99.TestMethodA(java.lang.String,java.lang.String) throws java.lang.InterruptedException requires a @DataProvider named : dataProvider in class testNG.DataProviders]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method public void testNG.DataProviderGuru99.TestMethodA(java.lang.String,java.lang.String) throws java.lang.InterruptedException requires a @DataProvider named : dataProvider in class testNG.DataProviders
+at org.testng.internal.Parameters.findDataProvider(Parameters.java:513)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:691)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestMethodA -->
+        <test-method status="FAIL" signature="TestMethodB(java.lang.String, java.lang.String)[pri:0, instance:testNG.DataProviderGuru99@262b2c86]" name="TestMethodB" duration-ms="0" started-at="2018-09-27T11:18:06Z" data-provider="dataProvider" finished-at="2018-09-27T11:18:06Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Found two providers called 'dataProvider' on class testNG.DataProviderGuru99]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Found two providers called 'dataProvider' on class testNG.DataProviderGuru99
+at org.testng.internal.Parameters.findDataProvider(Parameters.java:593)
+at org.testng.internal.Parameters.findDataProvider(Parameters.java:509)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:691)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestMethodB -->
+        <test-method status="PASS" signature="method2()[pri:0, instance:testNG.DataProviderGuru99@262b2c86]" name="method2" is-config="true" duration-ms="857" started-at="2018-09-27T11:18:06Z" finished-at="2018-09-27T11:18:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method2 -->
+      </class> <!-- testNG.DataProviderGuru99 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
